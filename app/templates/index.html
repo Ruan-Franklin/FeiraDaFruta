@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vôlei - Página Inicial</title>
-    
-    {% load static %} 
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">  
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#historico">Histórico</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#regras">Regras</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#referencias">Referências</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="{% static 'imagens/volei.gif' %}" alt="ÊPartida de vôlei" style="max-width: 100%; height: auto;">
+
     <h1>Bem-vindo ao Mundo do Vôlei</h1>
     <p>O vôlei é um esporte dinâmico e envolvente, caracterizado pelo trabalho em equipe e pela agilidade...</p>
 </body>

@@ -1,13 +1,48 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #121212; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto clara */
+    display: flex; /* Usando flexbox para centralização */
+    flex-direction: column; /* Alinha os itens na coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100vh; /* Altura total da tela */
+    margin: 0; /* Remove margens padrão */
+}
+
+header {
+    position: absolute; /* Permite que o cabeçalho não empurre o conteúdo para baixo */
+    top: 20px; /* Distância do topo */
+    left: 50%; /* Alinhamento horizontal */
+    transform: translateX(-50%); /* Centraliza o cabeçalho horizontalmente */
+}
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+nav ul li {
+    display: inline; /* Alinha os itens em linha */
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+nav a {
+    color: #007bff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
 }
 
 h1 {
-    color: #007bff;
+    color: #007bff; /* Cor do título */
+    text-align: center; /* Centraliza o texto do título */
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.5; /* Melhora a legibilidade do parágrafo */
+    text-align: center; /* Centraliza o texto do parágrafo */
+    margin: 0; /* Remove margens padrão */
 }
